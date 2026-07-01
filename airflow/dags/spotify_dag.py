@@ -11,7 +11,9 @@ from pathlib import Path
 
 import pandas as pd
 from airflow import DAG
+# pyrefly: ignore [missing-import]
 from airflow.operators.python import PythonOperator
+# pyrefly: ignore [missing-import]
 from airflow.utils.email import send_email
 
 # Make the project's src/ package importable from inside the Airflow container.
